@@ -1,0 +1,40 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  margin-bottom: 1.6rem;
+}
+@media only screen and (min-width: 1240px) {
+  .logo {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+
+.logo img {
+  margin-left: 0.1rem;
+  margin-right: 0.2rem;
+}
+
+.house {
+  margin-bottom: -0.2rem;
+}
+
+.footer span {
+  color: var(--tertiary-color);
+  font-size: 12px;
+}
+@media only screen and (min-width: 1240px) {
+  .footer span {
+    font-size: 24px;
+  }
+}

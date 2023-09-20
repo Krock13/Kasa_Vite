@@ -1,45 +1,45 @@
 import { useState, useEffect } from 'react';
 
-/**
- * Custom hook to fetch a URL using useEffect.
- * @param {string} url - The URL to fetch.
- * @returns {Object} - An object containing the data, a boolean indicating if the data is loading, and a boolean indicating if an error occurred.
- */
+// Custom hook for fetching data from a URL
 export function useFetch(url) {
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    let isMounted = true; // Component mounting indicator
-    // Set a loading indicator to true before fetching
+    let isMounted = true; // Track component mount status
     setLoading(true);
-    // Declaration of an asynchronous function (fetch, parse then save in the state data) + error handling
+
     async function fetchData() {
       try {
         const response = await fetch(url);
-        if (isMounted) {
-          if (response.ok) {
-            const data = await response.json();
+        if (response.ok) {
+          const data = await response.json();
+          if (isMounted) {
             setData(data);
-          } else {
-            throw new Error('Network response was not ok');
           }
+        } else {
+          throw new Error('Network response was not ok');
         }
       } catch (err) {
+        console.log(err);
         if (isMounted) {
-          console.log(err);
           setError(true);
         }
       } finally {
-        // Set the loading indicator to false after fetching
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     }
+
     fetchData();
+
+    // Cleanup: set isMounted to false when component unmounts
     return () => {
-      isMounted = false; // Update indicator during demounting
+      isMounted = false;
     };
   }, [url]);
+
   return { data, isLoading, error };
 }

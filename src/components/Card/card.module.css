@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  height: 255px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--primary-color);
+}
+@media only screen and (min-width: 1440px) {
+  .card {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+.card img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.card span {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 15px 20px;
+  color: var(--tertiary-color);
+  box-sizing: inherit;
+}
+
+.rectangle {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}

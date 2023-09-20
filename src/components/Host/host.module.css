@@ -1,0 +1,47 @@
+.nameContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.name {
+  font-size: 12px;
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+@media only screen and (min-width: 1240px) {
+  .name {
+    font-size: 18px;
+  }
+}
+
+.name p {
+  text-align: end;
+}
+
+.firstName {
+  margin-bottom: -5px;
+}
+@media only screen and (min-width: 1240px) {
+  .firstName {
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+.lastName {
+  margin-top: -5px;
+}
+
+.picture {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-top: 15px;
+}
+@media only screen and (min-width: 1240px) {
+  .picture {
+    height: 64px;
+    width: 64px;
+  }
+}

@@ -1,0 +1,114 @@
+.homeContainer {
+  background-color: var(--secondary-color);
+}
+@media only screen and (min-width: 1240px) {
+  .homeContainer {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.banner {
+  position: relative;
+  width: 90%;
+  height: 111px;
+  overflow: hidden;
+  background: center center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: -1px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+@media only screen and (min-width: 1440px) {
+  .banner {
+    width: 100%;
+    margin-left: 0%;
+    height: 223px;
+    margin-top: 34px;
+    border-radius: 25px;
+  }
+}
+
+.banner img {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: brightness(60%);
+}
+@media only screen and (min-width: 1240px) {
+  .banner img {
+    transform: translate(-50%, -15%);
+  }
+}
+
+.banner span {
+  position: absolute;
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 1rem;
+  color: var(--secondary-color);
+  font-weight: lighter;
+}
+@media only screen and (min-width: 1440px) {
+  .banner span {
+    font-size: 48px;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .spanContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+}
+
+.span1 {
+  margin-top: 2rem;
+}
+
+.span2 {
+  margin-top: 3.6rem;
+}
+@media only screen and (min-width: 1440px) {
+  .span2 {
+    margin-top: 2rem;
+  }
+}
+
+.thumb {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media only screen and (min-width: 1440px) {
+  .thumb {
+    padding: 0;
+    max-width: 1240px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cardContainer {
+    padding: 4.5%;
+    background-color: var(--tertiary-color);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .cardCalc {
+    margin-bottom: 30px;
+  }
+}
