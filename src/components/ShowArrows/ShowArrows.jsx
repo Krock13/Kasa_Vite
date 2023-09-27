@@ -4,13 +4,6 @@ import styles from './showArrows.module.css';
 import left_arrow from '../../assets/left_arrow.png';
 import right_arrow from '../../assets/right_arrow.png';
 
-// PropTypes for type checking
-ShowArrows.propTypes = {
-  goToPrevious: PropTypes.func.isRequired,
-  goToNext: PropTypes.func.isRequired,
-  slides: PropTypes.array.isRequired,
-};
-
 // Function to display navigation arrows for an image slider
 export function ShowArrows({ goToPrevious, goToNext, slides }) {
   // If there is only one slide, don't display the arrows
@@ -37,3 +30,10 @@ export function ShowArrows({ goToPrevious, goToNext, slides }) {
     </div>
   );
 }
+
+// PropTypes for type checking
+ShowArrows.propTypes = {
+  goToPrevious: PropTypes.func.isRequired,
+  goToNext: PropTypes.func.isRequired,
+  slides: PropTypes.array.isRequired,
+};

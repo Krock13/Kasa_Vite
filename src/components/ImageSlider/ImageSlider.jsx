@@ -43,7 +43,9 @@ export const ImageSlider = ({ slides }) => {
       <div className={styles.rectangle}></div>
 
       {/* Display the current image index and the total number of images */}
-      <div className={styles.imageIndex}>{`${currentIndex + 1}/${slides.length}`}</div>
+      <div className={styles.imageIndex}>
+        {slides.length > 1 ? `${currentIndex + 1}/${slides.length}` : ''}
+      </div>
 
       <div>
         {slides.map((_, slideIndex) => {
