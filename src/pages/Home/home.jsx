@@ -18,7 +18,7 @@ export function Home() {
     <div className={styles.homeContainer}>
       {/* Banner */}
       <section className={styles.banner}>
-        <img src={banner} alt='paysage côtier'></img>
+        <img src={banner} alt='paysage côtier' />
         <div className={styles.spanContainer}>
           <span className={styles.span1}>Chez vous, </span>
           <span className={styles.span2}>partout et ailleurs</span>

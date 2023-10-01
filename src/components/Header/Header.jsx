@@ -11,10 +11,10 @@ export function Header() {
     <header className={styles.header}>
       {/* Display the Kasa logo and link it to the home page */}
       <Link to={'/'} className={styles.logo}>
-        <img src={vector_K} alt='K'></img>
-        <img className={styles.house} src={vector_A_house} alt='A'></img>
-        <img src={vector_S} alt='S'></img>
-        <img src={vector_A} alt='A'></img>
+        <img src={vector_K} alt='K' />
+        <img className={styles.house} src={vector_A_house} alt='A' />
+        <img src={vector_S} alt='S' />
+        <img src={vector_A} alt='A' />
       </Link>
       {/* Navigation links */}
       <nav>

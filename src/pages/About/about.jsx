@@ -11,7 +11,7 @@ export function About() {
     <div className={styles.aboutContainer}>
       {/* Banner */}
       <div className={styles.bannerContainer}>
-        <img src={banner} alt='bannière paysage de montagne' className={styles.banner}></img>
+        <img src={banner} alt='bannière paysage de montagne' className={styles.banner} />
       </div>
       {/* Body */}
       <div className={styles.collapsibleContainer}>

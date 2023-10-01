@@ -14,19 +14,9 @@ export function ShowArrows({ goToPrevious, goToNext, slides }) {
   return (
     <div>
       {/* Display the left arrow and call the goToPrevious function when clicked */}
-      <img
-        src={left_arrow}
-        alt='leftArrow'
-        onClick={goToPrevious}
-        className={styles.leftArrow}
-      ></img>
+      <img src={left_arrow} alt='leftArrow' onClick={goToPrevious} className={styles.leftArrow} />
       {/* Display the right arrow and call the goToNext function when clicked */}
-      <img
-        src={right_arrow}
-        alt='rightArrow'
-        onClick={goToNext}
-        className={styles.rightArrow}
-      ></img>
+      <img src={right_arrow} alt='rightArrow' onClick={goToNext} className={styles.rightArrow} />
     </div>
   );
 }

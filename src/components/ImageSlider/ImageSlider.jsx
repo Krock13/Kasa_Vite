@@ -39,7 +39,7 @@ export const ImageSlider = ({ slides }) => {
       <ShowArrows goToPrevious={goToPrevious} goToNext={goToNext} slides={slides} />
 
       {/* Display the current slide */}
-      <img src={photo} alt={`Slide ${currentIndex + 1}`} className={styles.pictures}></img>
+      <img src={photo} alt={`Slide ${currentIndex + 1}`} className={styles.pictures} />
       <div className={styles.rectangle}></div>
 
       {/* Display the current image index and the total number of images */}
