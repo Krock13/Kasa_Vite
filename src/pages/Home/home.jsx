@@ -7,7 +7,7 @@ import banner from '../../assets/banner.png';
 
 export function Home() {
   // Use the fetch hook to get data from the provided url
-  const { data, error } = useFetch(`./logements.json`);
+  const { data, error } = useFetch(`${import.meta.env.BASE_URL}logements.json`);
 
   // If there is an error while fetching, display an error message
   if (error) {
