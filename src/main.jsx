@@ -14,7 +14,7 @@ import './utils/style/globalStyle.css';
 // Render the app in the root element
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <Router basename="/Kasa_Vite">
       <ScrollToTopWrapper>
         <Header />
         <Routes>
