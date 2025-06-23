@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <ScrollToTopWrapper>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route index element={<Home />} />
           <Route path='/lodging/:id' element={<Lodging />} />
           <Route path='/about' element={<About />} />
           <Route path='*' element={<Error />} />
